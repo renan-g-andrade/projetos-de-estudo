@@ -1,0 +1,158 @@
+:root { 
+    --roxo: #5312A7;
+    --preto: #343A40;
+    --branco: #FFFFFF;
+    --background: #f5f5f5;
+    --Font-Roboto: 'Roboto'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: var(--background);
+font-family: var(--Font-Robot);
+margin: 1.5em;
+}
+
+/*-------------------------------TEXTAREA--------------------------------*/
+
+#entrada {
+    margin-top: 3em;
+    width: 100%;
+    border: none;
+    font-size: 2em;
+    font-family: var(--Font-Roboto);
+    color: var(--roxo);
+    background-color: transparent;
+    scrollbar-width: none;
+}
+
+#entrada::placeholder {
+    color: var(--roxo);
+    font-family: var(--Font-Roboto);
+    
+}
+
+#resultado {
+    margin-top: 1em;
+    width: 93%;
+    background-color: var(--branco);    
+    border: none;
+    font-size: 20px;
+    font-family: var(--Font-Roboto);
+
+}
+
+#resultado::placeholder {
+    text-align: center;
+    font-family: var(--Font-Roboto);
+    font-size: 1.5em;
+    color: var(--preto);
+}
+
+
+/*------------------------------BOTÕES-----------------------------------*/
+.botao {
+    
+margin: 1em 0;  
+width: 100%;
+text-align: center;
+border: 1.3em solid;
+border-color: var(--roxo);
+border-radius: 22px;
+font-family: var(--Font-Roboto);
+font-size:100%;
+}
+
+.solido {
+background-color: var(--roxo);
+color: var(--branco);   
+}
+
+.transparente{
+background-color: transparent;
+color: var(--roxo);
+border: 1px solid;
+padding: 1.3em;
+}
+
+.resultado > .botao {
+    width: 92%;
+}
+
+/*-------------------------------OUTROS----------------------------------*/
+
+.alerta {
+    display: flex;
+}
+
+.resultado {
+    text-align: center;
+    background-color: var(--branco);
+    border-radius: 22px;    
+    border: none;
+    margin-top: 2em;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042);
+
+}
+
+
+/*------------------------------@MEDIA-----------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*------------------------------TABLET-----------------------------------*/
+
+@media(min-width: 568px) {
+
+    .botoes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .botoes > .botao {
+        width: 48%;
+    }
+
+    .resultado > .botao {
+        width: 92%;
+    }
+}
+
+
+/*------------------------------DESKTOP----------------------------------*/
+
+@media(min-width: 900px) {
+ 
+    section {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 66% 33%;
+        justify-content: space-around;
+    }
+
+    .entrada {
+        margin: 0 4em 0 8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .resultado {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+ /*----------------------DESATIVADO, FAZ PARTE DO PLACEHOLDER MAS ESTÁ MAL FEITO ---------
+    #resultado::placeholder {
+        background-image: url(../img/placeholder-imagem.svg)
+    }
+*/
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+     <img src="img/Vector.svg" alt="">   
+    <section>
+        <div class="entrada">
+                <textarea id="entrada" placeholder="Digite seu texto"></textarea>
+            <div>
+                <div class="alerta">
+                    <img src="img/Vector_exclamacao.svg" alt="">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botoes">
+                    <button class="botao solido" id="criptografar" >Criptografar</button>
+                    <button class="botao transparente" id="descriptografar">Descriptografar</button>
+                </div>
+            </div>    
+        </div>
+        <div class="resultado">
+            <textarea id="resultado" placeholder="Nenhuma mensagem encontrada"></textarea>
+            <button class="botao transparente" id="copiar">Copiar</button>
+        </div>
+    </section>
+
+    <script src="JS/JavaScript.js"></script><!--Auto Resize-->
+
+</body>
+</html>
